@@ -1,0 +1,12 @@
+{
+  "name": "s10p12d205",
+  "version": "1.0.0",
+  "description": "- 기존 윷놀이 말에 밀정 시스템을 추가하여 색다르게 즐길 수 있음\r - 맵의 특정 위치마다 미션을 설정하여 색다르게 즐길 수 있음",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

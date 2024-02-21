@@ -1,0 +1,72 @@
+spring:
+  #메일 인증을 위한 설정
+  mail:
+    host: ENC(viy9Ztw5f5J212yEvuLOfI/AtepmAaGK) #gmail 서비스 사용
+    port: 587
+    username: ENC(80aS6n6xT6g/f/ZnpAfGDE8jHTm+Qyb3ZAHefBG4fes=) #gmail 계정
+    password: ENC(W9n+wP/FM0oGHZWPqEflaYNIaInbEquF1GCxU38uwlY=) #메일 api 인증 코드
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+    auth-code-expiration-millis: 1800000  # 30 * 60 * 1000 == 30분
+
+  #레디스 설정 정보
+  redis:
+    host: ENC(5lc3y/8+rbT2qZUwQAJmB2uMQ/2njthp6miNwxuZBHY=) #서버주소
+    port: 6379 #레디스 컨테이너 포트
+
+  #하이버네이트 설정
+  h2:
+    console:
+      enabled: true
+
+  #Mysql 설정
+  datasource:
+    url: ENC(hf8hLOPLxNmFLgEX05LWevL2cHUP3jtN8T5Hs20HCbepzBc18ncRrs1dfjB4hOhv0W6nLTcvUm2EYnr0ufO13/yDJGE3I+44KFv9cAvyzET6cZ1m34pxOlobe/sVPRRK) #AWS서버 컨테이너 포트맵핑
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ENC(fVvNH1SNPMpW9Q29/p13/g==)
+    password: ENC(EeJHR6Zf+2w8xuN45J2hRw==)
+
+  #jpa 설정
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+  #jwt 설정
+  jwt:
+    secret: ENC(x+0ILox+LZ+MIU6Xqo6ziYi6kL0+9aqJBhr+nZgQVjAZghULDZ20ftwtTYWQQe8sWeX9L8GRFknFaFOSg/m29yLFc6F15w8N8cSBUdcbiv4=)
+
+#swagger 로그인 엔드포인트 생성
+springdoc:
+  show-login-endpoint: true
+
+#openvidu 설정
+OPENVIDU_URL: https://i10d205.p.ssafy.io:8443
+OPENVIDU_SECRET: ENC(VTaBF034COcbXIMho1LVUK+Q51Iy7Swy)
+
+
+server:
+  ssl:
+    enabled: false
+
+  #서버 앤드포인트 설정
+  servlet:
+    context-path: /api/v1
+
+  port: 8080
+
+#jpa 쿼리 로그 설정
+#logging:
+#  level:
+#    org.hibernate.SQL: debug
+#    org.hibernate.type: trace

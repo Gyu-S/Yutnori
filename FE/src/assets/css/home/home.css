@@ -1,0 +1,197 @@
+.event-detail-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  
+
+.banner-container {
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  height: 40vh;
+  width: 62vw;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.carousel__item {
+  max-height: 50vh;
+  max-width: 100vw;
+  background-color: rgba(255, 255, 255, 0);
+  color: var(--vc-clr-white);
+  font-size: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.carousel__slide {
+  padding: 10px;
+}
+
+.carousel__prev,
+.carousel__next {
+  box-sizing: content-box;
+  border: 5px solid white;
+}
+
+#gallery {
+  margin-top: 10px;
+  border-radius: 40px;
+  object-fit: contain;
+  max-height: 55vh;
+  max-width: 55vw;
+}
+
+.article-container {
+  display: flex;
+  position: relative;
+  max-width: 55vw;
+  margin-left: 10%;
+}
+
+#patch {
+  margin-left: 70px;
+  width: 60vw;
+  height: 45vh;
+}
+
+#patch-title {
+  max-height: 11vh;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 25px;
+  margin-left: 20px;
+  margin-right: 55px;
+}
+
+#patch-content {
+  height: 12vw;
+  box-sizing: border-box;
+  flex: 1;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  box-sizing: border-box;
+  padding: 20px 20px;
+  margin-right: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+}
+
+#patch-list {
+  /* height: calc(100% - 23px - 31px - 10px); */
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#patch-content > #patch-list > span {
+  color: white;
+  font-size: 20px;
+  margin: 8px;
+}
+
+#patch-content > #patch-list > span:hover {
+  text-decoration: underline;
+}
+
+#detail-btn {
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 25px;
+  /* align-self: flex-end; */
+}
+
+#detail-btn:hover {
+  text-decoration: underline;
+}
+
+.help {
+  width: 45vw;
+  height: 50vh;
+}
+
+.help-icon {
+  margin-top: 140px;
+  margin-left: 80px;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  border: 5px solid #000000;
+}
+
+.help-icon i {
+  font-size: 18px;
+}
+
+.help-icon img {
+  font-size: 18px;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  transition: transform 0.3s ease;
+}
+
+.help-icon img:hover {
+  transform: rotate(-180deg);
+}
+
+.help-message {
+  position: absolute; /* absolute에서 relative로 변경 */
+  margin-top: 70px;
+  margin-left: 50px;
+  padding: 12px;
+  font-size: 15px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #ffffffa4;
+  display: inline-block;
+  z-index: 1;
+}
+
+.help-close-btn {
+  position: relative;
+  top: -1.4vh;
+  right: 0.1vw;
+  background: none;
+  color: #000000;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
+/* 모달창 애니메이션 */
+.fade-enter-from {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: all 0.5s;
+}
+
+.fade-enter-to {
+  opacity: 1;
+}
+
+.fade-leave-from {
+  opacity: 1;
+}
+
+.fade-leave-active {
+  transition: all 0.5s;
+}
+
+.fade-leave-to {
+  opacity: 0;
+}

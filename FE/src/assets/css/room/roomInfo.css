@@ -1,0 +1,69 @@
+/* 방 클릭시 나오는 상세 정보 프레임 */
+.room-detail {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: whitesmoke;
+  opacity: 0.8;
+  border-radius: 30px;
+  padding: 20px 30px;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 50vh;
+}
+
+/* 방 클릭 시 나오는 상세 정보 프레임 */
+.room-detail-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-detail-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 7vw;
+}
+
+/* 방 클릭시 나오는 상세 정보 콘텐츠의 부제목 */
+.room-detail-subtitle {
+  color: #44a9f3;
+  margin-bottom: 8px;
+  height: 10px;
+  text-overflow: ellipsis;
+}
+
+/* .room-detail-content {
+  font-size: small;
+} */
+
+/* 방 클릭 시 나오는 테마 관련 (그림 및 글) */
+.room-detail-theme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 이미지 사진 크기 줄이기 */
+img {
+  width: 200px;
+}
+
+/* 방 클릭시 나오는 상세 정보 참가 버튼 */
+button {
+  background-color: #2d81ff;
+  opacity: 100%;
+  border-radius: 50px;
+  width: 30%;
+  align-self: center;
+}
+
+button:hover {
+  box-shadow: 3px 3px 3px rgba(84, 122, 171, 0.5);
+  text-shadow: 1px 1px 1px;
+}
+
+/* 텍스트 정렬 */
+p {
+  text-align: center;
+  width: 8vw;
+}

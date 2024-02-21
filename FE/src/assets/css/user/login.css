@@ -1,0 +1,107 @@
+
+.login-text {
+  margin-bottom: 20px;
+  top: -10px; /* 위로 20픽셀 이동, 필요에 따라 조절 가능 */
+  color: white;
+  font-family: "Palatino Linotype", "Book Antiqua", palatino, serif; /* Press Start 2P 글꼴 적용 */
+}
+
+.button-container {
+  margin: 20px;
+}
+
+/* 모달 애니메이션 */
+.modal {
+  /* 기본 스타일 유지 */
+  border-color: black;
+  display: flex;
+  align-items: center; /* 수직 중앙 정렬 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  position: fixed;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
+
+.modal-content {
+  /* 기본 스타일 유지 */
+  background-color: #00000035;
+  margin: 5% auto;
+  padding: 20px;
+  border: 2px solid #888;
+  border-color: white;
+  border-radius: 30px;
+  width: 300px;
+  text-align: center;
+  /* 애니메이션 설정 */
+  transform: translateY(-50px);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.close {
+  background-color: #ffffff00;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  margin-right: 10px;
+  color: white;
+  z-index: 999; /* 높은 값으로 설정 */
+}
+
+/* 입력란 스타일 */
+input[type="text"],
+input[type="password"] {
+  width: 75%;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.input-code{
+  margin-top: 10px;
+}
+
+.find-msg{
+  color: #f44336;
+  font-size: 15px;
+}
+
+.modal-login-btn {
+  margin-top: 10px;
+  width: 80%;
+}
+.modal-join-btn {
+  background-color: transparent;
+  width: 40%;
+}
+.modal-find-btn {
+  background-color: transparent;
+  width: 40%;
+}
+
+/* 로그인 버튼 호버 효과 */
+.modal-login-btn:hover{
+  background-color: #f44336; /* 호버 시 배경색 변경 */
+  color: white; /* 호버 시 텍스트 색상 변경 */
+}
+
+/* 취소 버튼 호버 효과 */
+.modal-join-btn:hover,
+.modal-find-btn:hover {
+  color: #f44336; /* 호버 시 텍스트 색상 변경 */
+
+  /* 트랜지션 효과 */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.email-btn{
+  position: absolute;
+  right: 14%;
+  background-color: transparent;
+  color: black;
+  border-left: 3px solid #eb00009c;
+  margin-top: 2px;
+}

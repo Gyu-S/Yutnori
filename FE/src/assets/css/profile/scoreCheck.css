@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  color: white;
+  width: 45vw;
+  height: 15vh;
+  background-color: rgb(225, 100, 100);
+  border-radius: 30px;
+  font-size: 12px;
+  align-items: center;
+  margin: 20px;
+  font-weight: bold;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.character {
+  width: 50px;
+  height: 70px;
+}
+
+.left-section {
+  padding: 20px;
+}
+
+.img-section {
+  padding: 20px;
+}
+
+.middle-section {
+  padding: 20px;
+}
+
+.right-section {
+  margin-left: 200px;
+  padding: 10px;
+}

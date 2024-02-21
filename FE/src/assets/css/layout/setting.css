@@ -1,0 +1,158 @@
+.setting-modal {
+  background-color: #3D3D3D;
+  border: 5px solid whitesmoke;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  padding: 50px 200px;
+  border-radius: 30px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.setting-value {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.background-value {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.setting-value {
+
+}
+
+.background-value label {
+  display: inline-block;
+  margin-bottom: 8px;
+  margin-right: 10px;
+}
+
+
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  padding-right: 10px;
+  padding-top: 30px;
+}
+
+select {
+  width: 350px;
+  height: 40px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+}
+
+option {
+  background-color: #fff;
+  color: #333;
+}
+
+.setting-value  p {
+  margin-top: 42px;
+  margin-right: 30px;
+  margin-left: 10px;
+  width: 100px;
+  height: 50px;
+}
+
+select:focus {
+  outline: none;
+  border-color: #5b9dd9;
+  box-shadow: 0 0 10px rgba(91, 157, 217, 0.5);
+}
+
+.volume-sound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding-bottom: 25px;
+}
+
+/* 배경음악 */
+.volume {
+  width: 200px;
+  background: linear-gradient(to right, #C0D904 0%, #C0D904 50%, #ececec 50%, #ececec 100%);
+  border-radius: 8px;
+  outline: none;
+  transition: 450ms ease-in;
+  accent-color: #C0D904;
+}
+
+/* 효과음 */
+.radio {
+  margin: 0px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.radio-label {
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+.radio-button {
+  appearance: none;
+  border: max(2px, 0.1em) solid gray;
+  border-radius: 50%;
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.radio-button:checked {
+  border: 0.4em solid #C0D904;
+}
+
+.radio-button:hover {
+  box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
+}
+
+/* 버튼 */
+.btn-box {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-box button {
+  border-radius: 50px;
+  padding: 10px 30px;
+  color: black;
+  font-weight: bold;
+}
+
+.btn-box button:hover {
+  color: whitesmoke;
+  box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
+}
+
+.btn-confirm {
+  background-color: #7EB0F2;
+  font-size: medium;
+}
+
+.btn-cancel {
+  background-color: #D97171;
+  font-size: medium;
+}

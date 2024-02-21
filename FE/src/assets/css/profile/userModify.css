@@ -1,0 +1,70 @@
+.user-profile {
+  display: flex;
+  color: white;
+  margin-top: 45px;
+  font-size: 15px;
+}
+
+.left-section {
+  flex: 1; /* 왼쪽 섹션이 남은 공간을 모두 차지하도록 설정 */
+  align-self: flex-start;
+}
+
+.right-section {
+  flex: 1; /* 오른쪽 섹션이 남은 공간을 모두 차지하도록 설정 */
+  text-align: left; /* 오른쪽 정렬을 위해 설정 */
+  margin-top: 4%;
+  align-self: flex-start;
+  margin-right: 7%;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+}
+
+.gender-font {
+  font-weight: bold;
+}
+
+.memberout-btn {
+  margin-left: 60%;
+  background-color: red;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.nickname-change-btn {
+  background-color: rgb(63, 63, 241);
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+#title{
+  margin-right: 30px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-section > div{
+  margin-bottom: 15px;
+  width: 20vw;
+  display: flex;
+}
+
+.right-section > div > span{
+  flex: 1;
+  height: 4vh;
+}

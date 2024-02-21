@@ -1,0 +1,88 @@
+/* 전반적인 방 리스트 페이지 컨테이너 구성 */
+.room-info {
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: grid;
+  grid-template-columns: 6fr 4fr 2fr;
+  column-gap: 50px;
+  height: 70vh;
+}
+
+/* 서브타이틀 */
+h2 {
+  color: whitesmoke;
+  margin-bottom: 2%;
+}
+
+/* 왼쪽, 오른쪽 박스 */
+.room-list {
+  height: 70vh;
+  background: none;
+}
+
+.room-list-box {
+  display: flex;
+  max-height: 68vh;
+  flex-direction: column;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 30px;
+  padding: 50px 50px;
+  box-sizing: border-box;
+  color: whitesmoke;
+}
+
+/* 방 생성 버튼 */
+.room-make-btn {
+  background-color: black;
+  opacity: 80%;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+/* 방 생성 버튼 호버 */
+.room-make-btn:hover {
+  background-color: #2d81ff;
+  text-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+}
+
+/* 방 생성 모달 */
+.room-make-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  background-color: rgb(60, 58, 58);
+  min-width: 400px;
+  min-height: 450px;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+/* 모달창 애니메이션 */
+.fade-enter-from {
+  opacity: 0;
+}
+.fade-enter-active {
+  transition: all 0.5s;
+}
+.fade-enter-to {
+  opacity: 1;
+}
+.fade-leave-from {
+  opacity: 1;
+}
+.fade-leave-active {
+  transition: all 0.5s;
+}
+.fade-leave-to {
+  opacity: 0;
+}

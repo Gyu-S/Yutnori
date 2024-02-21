@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 80vh;
+}
+
+.box {
+  margin-top: 5%;
+  padding: 20px;
+  width: 700px;
+  height: 400px;
+  box-shadow: 0 4px 8px rgba(1, 1, 1, 0.7);
+  border-radius: 8px;
+  text-align: center;
+  background-color: rgba(6, 6, 6, 0.7);
+}
+
+.router-link {
+  display: inline-block;
+  width: 130px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #050505;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* 모달창 애니메이션 */
+.fade-enter-from {
+  opacity: 0;
+}
+.fade-enter-active {
+  transition: all 0.5s;
+}
+.fade-enter-to {
+  opacity: 1;
+}
+.fade-leave-from {
+  opacity: 1;
+}
+.fade-leave-active {
+  transition: all 0.5s;
+}
+.fade-leave-to {
+  opacity: 0;
+}

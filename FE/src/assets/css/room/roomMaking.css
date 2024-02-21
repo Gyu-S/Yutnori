@@ -1,0 +1,116 @@
+/* 방 생성 모달 스타일 */
+.room-make-modal {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 가운데 정렬 */
+}
+
+/* 폼 스타일 */
+.room-make-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 왼쪽 정렬 */
+  margin-top: 30px; /* 각 폼 요소 사이에 간격 추가 */
+}
+
+/* 각 폼 요소 스타일 */
+.form-group {
+  margin-bottom: 50px; /* 라벨과 입력 요소 사이에 간격 추가 */
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* input과 label 사이 거리를 벌리기 */
+.form-group label {
+  margin-right: 20px;
+  font-size: large;
+  font-weight: bold;
+  color: #ffe600;
+  width: 6vw;
+}
+
+/* 버튼 그룹 스타일 */
+.button-group {
+  display: flex;
+  justify-content: space-evenly; /* 버튼들 사이의 간격을 균등하게 배치 */
+  width: 100%; /* 버튼 그룹을 폼 너비에 맞추기 */
+}
+
+
+/* 버튼 스타일 */
+.button-group button {
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: bold;
+}
+
+/* 취소 버튼 */
+.cancle {
+  background-color: #DC3545;
+}
+
+/* 생성 버튼 */
+.create {
+  background-color: #2D81FF;
+}
+
+/* input 포커스 border 효과 없애기 */
+input:focus {
+  outline: none;
+}
+
+/* input bottom만 남기기 */
+input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 3px solid whitesmoke;
+  outline: none;
+  color: whitesmoke;
+}
+
+/* select 포커서 border 효과 없애기 */
+select:focus {
+  outline: none;
+}
+
+/* select 화면과 맞게 꾸미기 */
+select {
+  background: transparent;
+  border: 3px solid whitesmoke;
+  color: whitesmoke;
+  border-radius: 3px;
+}
+
+/* option 화면에 맞게 꾸미기 */
+select option {
+  background-color: rgb(60, 58, 58);
+  color: whitesmoke;
+  padding: 3px 0;
+}
+
+#theme-btn {
+  background-color: #00000000; /* 회색 배경색 */
+  color: #ffffff; /* 글자색 */
+  font-weight: bold;
+  border-radius: 300px;
+}
+
+#theme-btn:hover {
+  background-color: #0037ec5a;
+  
+}
+
+#theme-btn.selected {
+  background-color: #0037ec5a; /* 빨간색 배경색 */
+  color: #fff; /* 글자색 */
+}
+
+h2{
+  color: #ffffff;
+}
+
+#title, #password{
+  text-align: center;
+}

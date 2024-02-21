@@ -1,0 +1,32 @@
+/* 대기 방 부모 css */
+.wait-div{
+    display: flex;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.wait-left{
+    background-color: rgba(0, 0, 0, 0.474);
+    border-radius: 10px;
+    max-width: 32vw;
+    height: 80vh;
+}
+.wait-right{
+    margin-left: 50px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.wait-btn{
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 80px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.wait-btn:hover {
+    color: #7EB0F2; /* 마우스 오버 시의 텍스트 색상 */
+    transition: background-color 0.3s, color 0.3s; /* 색상 변경에 애니메이션 효과 적용 */
+  }

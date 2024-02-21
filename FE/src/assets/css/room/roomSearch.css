@@ -1,0 +1,34 @@
+/* 방 검색 form */
+.room-search-form {
+  display: flex;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  box-sizing: border-box;
+  max-width: 100vw;
+  min-width: 300px;
+  opacity: 100%;
+  padding: 0 20px;
+  margin-left: 40px;
+}
+
+/* 방 검색 바 */
+.room-search-input {
+  flex: 9;
+  border: none;
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+
+/* 방 검색 포커스 됐을 때 생기는 효과 없애기 */
+.room-search-input:focus{
+  outline: none;
+}
+
+/* 방 검색 버튼 flex 분배 */
+.room-search-btn {
+  flex: 1;
+}

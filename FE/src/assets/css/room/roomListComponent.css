@@ -1,0 +1,12 @@
+/* 표 여백 주기 */
+.room-list-component {
+  display: flex;
+  justify-content: space-between;
+  max-height: 5vh;
+  margin-bottom: 20px;
+}
+
+td {
+  word-wrap: break-word;
+  word-break: break-all;
+}

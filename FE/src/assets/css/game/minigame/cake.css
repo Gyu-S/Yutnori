@@ -1,0 +1,83 @@
+/* 최상단 block */
+.videoView {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgb(10, 10, 10);
+  border-radius: 15px;
+  width: 50%;
+  height: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/* 캔버스 및 비디오 담는 block */
+.media-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 캔버스 및 비디오 거울모드 */
+.media {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+/* 웹캠 */
+#webcam {
+  width: 70%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* 시작 타이머 */
+.start-timer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-stretch: expanded;
+  font-size: 5rem;
+  background-color: rgba(255, 22, 6, 0.863);
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 15px;
+  border-radius: 30px;
+}
+
+/* 게임 타이머 */
+.game-timer {
+  color: white;
+}
+
+/* 타겟 개수 */
+.target-count {
+  color: yellow;
+  padding-bottom: 10px;
+}
+
+/* 게임 결과 */
+.game-result {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(5, 5, 5);
+  background-color: rgb(245, 202, 12);
+  width: 23vw;
+  height: 10.5vh;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 50px;
+  border: 5px solid black;
+  font-size: 50px;
+}

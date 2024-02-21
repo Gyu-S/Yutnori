@@ -1,0 +1,59 @@
+.search-main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 검색 form */
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  box-sizing: border-box;
+  max-width: 100vw;
+  min-width: 100px;
+  opacity: 100%;
+  padding: 0 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/* 검색 바 */
+.search-input {
+  flex: 9;
+  border: none;
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* 검색 포커스 됐을 때 생기는 효과 없애기 */
+.search-input:focus {
+  outline: none;
+}
+
+/* 검색 버튼 flex 분배 */
+.search-btn {
+  flex: 1;
+}
+
+.friend-profile {
+  width: 60px;
+  height: 60px;
+}
+
+.search-output {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.friend-plus-btn {
+  margin-left: 20px;
+  margin-right: 7px;
+  background-color: rgb(65, 116, 245);
+  border-radius: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

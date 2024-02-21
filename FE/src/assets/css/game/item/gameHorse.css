@@ -1,0 +1,23 @@
+.horse-info-container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.horse-info-name{
+    font-size: x-large;
+    text-align: center;
+    color: white;
+}
+.horse-info-hr{
+    margin-top: 3px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.horse-info-div{
+    margin-top: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: large;
+    color: white;
+}

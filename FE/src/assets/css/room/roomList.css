@@ -1,0 +1,90 @@
+.room-list-component {
+  border: 2px solid aqua;
+  padding: 8px;
+}
+
+.room-list-component:hover {
+  border: 2px solid rgb(255, 0, 0);
+  padding: 8px;
+}
+
+.room-list-component-selected {
+  border: 2px solid red;
+  padding: 8px;
+}
+
+/* 게임 방 검색 바 */
+.room-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 게임 목록 부제목 */
+.room-list-subtitle {
+  color: rgb(0, 255, 72);
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+  margin-top: 30px;
+}
+
+/* 새로고침 돌아가는 효과 */
+.rotate-animation {
+  animation: rotateAnimation 2s ease;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 실게 게임 목록 스크롤바 지정 */
+.room-list-content {
+  max-height: 40vh;
+  overflow-y: auto;
+  padding-right: 30px;
+}
+
+/* 실제 게임 목록 스크롤바 배경 */
+.room-list-content::-webkit-scrollbar-track {
+  background: transparent; /* 스크롤바 배경을 투명하게 설정 */
+}
+
+/* 실제 게임 목록 스크롤바 핸드 스타일 */
+.room-list-content::-webkit-scrollbar-track {
+  background: #ffffff; /* 스크롤바 핸들 색상 설정 */
+  border-radius: 10px; /* 스크롤바 핸들 둥근 모서리 설정 */
+}
+
+/* 실제 게임 목록 스크롤바 핸드 스타일 */
+.room-list-content::-webkit-scrollbar-thumb {
+  background: #ff6363; /* 스크롤바 핸들 색상 설정 */
+  border-radius: 20px; /* 스크롤바 핸들 둥근 모서리 설정 */
+  height: 20px;
+}
+
+/* 실제 게임 목록 스크롤바 핸들 호버 시 스타일 */
+.room-list-content::-webkit-scrollbar-thumb:hover {
+  background: #0000008d; /* 호버 시 스크롤바 핸들 색상 변경 */
+}
+
+/* 실제 게임 목록 스크롤바 너비 설정 */
+.room-list-content::-webkit-scrollbar {
+  width: 10px; /* 스크롤바 너비 설정 */
+}
+
+/* 게임 방 목록 첫 행 */
+th {
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+/* 방 목록 및 세부사항 제목 */
+h2 {
+  padding-bottom: 30px;
+}

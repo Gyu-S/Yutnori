@@ -1,0 +1,27 @@
+
+.fade-enter-from {
+  /* 시작시 효과 */
+  opacity: 0;
+}
+
+.fade-enter-active {
+  /* 전체 단계에서 적용될 부분*/
+  transition: all 0.85s;
+}
+
+.fade-enter-to {
+  /* 끝나는 효과 */
+  opacity: 1;
+}
+
+.fade-leave-from {
+  opacity: 1;
+}
+
+.fade-leave-active {
+  transition: all 0.85s;
+}
+
+.fade-leave-to {
+  opacity: 0;
+}

@@ -1,0 +1,47 @@
+/* 프로필에서 처음에는 가로로 배치한다 */
+.nav-pro{
+    display: flex;
+}
+
+/* 테두리 설정 */
+.nav-img{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.img{
+    width: 50px;
+}
+/* 사진을 위치 시킨 후 이름과 내정보 버튼은 세로로 배치한다 */
+.nav-info{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 수직 축에서 중앙 정렬 */
+    /* align-items: center; 수평 축에서 중앙 정렬 */
+}
+
+span{
+    text-align: start;
+}
+
+.nav-my{
+    display: flex;
+}
+
+.nav-btn{
+    background-color: whitesmoke;
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 2px 5px;
+    border: 3px lightgray solid;
+    color: rgb(38, 38, 38);
+    font-size: small;
+}
+
+.nav-btn:hover {
+    cursor: pointer;
+    background-color: darkgray;
+    color: whitesmoke;
+}

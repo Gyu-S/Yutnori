@@ -1,0 +1,70 @@
+.game-spy-select-main {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  left: 450px;
+  top: 175px;
+  width: 600px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  z-index: 1006;
+}
+
+.game-spy-select-title {
+  font-size: xx-large;
+  font-weight: 600;
+}
+.game-spy-select-text{
+    font-size: large;
+}
+.game-spy-select-container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.game-spy-select-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px; /* 오른쪽 마진 추가 */
+}
+
+/* 마지막 항목에는 오른쪽 마진을 제거합니다 */
+.game-spy-select-item:last-child {
+  margin-right: 0;
+}
+
+.game-spy-select-item-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-spy-select-item-img {
+  background-color: rgb(163, 163, 163);
+  border-radius: 50%;
+  width: 70px;
+}
+.game-spy-select-item-img-selected{
+    border: 2px solid red; 
+}
+.game-spy-select-item-img:hover{
+    background-color: rgb(255, 121, 121);
+}
+
+.game-spy-select-btn {
+  background-color: rgb(105, 159, 239);
+  width: 80px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: black;
+  margin-right: 10px;
+}
+.game-spy-select-btn:hover{
+    background-color: #f44336;
+    color: white;
+}

@@ -1,0 +1,63 @@
+/* 로고 사이즈와 위치를 고정시킨다 */
+.img-log {
+  width: 70px;
+  margin-left: 20px;
+}
+/* display를 flex로 설정 후 가로 배치 */
+.nav-bar {
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  overflow: hidden;
+  background-color: #00000000;
+  border-bottom: 2px solid white;
+  display: flex;
+  align-items: center;
+}
+
+/* 텍스트 위한 클래스 */
+.text-box {
+  margin-left: 50px;
+}
+
+.nav-text {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* 네비게이션 바 링크에 마우스를 올렸을 때의 스타일 */
+.nav-text:hover {
+  color: #eb00009c; /* 마우스 오버 시의 텍스트 색상 */
+}
+
+.active-link {
+  /* 선택된 링크의 색상을 여기에 지정하세요. 예: */
+  color: #eb00009c;
+}
+
+/* 프로필 위한 클래스 */
+.pro-box {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.fade-enter-from {
+  opacity: 0;
+}
+.fade-enter-active {
+  transition: all 0.5s;
+}
+.fade-enter-to {
+  opacity: 1;
+}
+.fade-leave-from {
+  opacity: 1;
+}
+.fade-leave-active {
+  transition: all 0.5s;
+}
+.fade-leave-to {
+  opacity: 0;
+}

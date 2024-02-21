@@ -1,0 +1,45 @@
+.end-main {
+  position: relative;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.8),     /* 시작 색상: 검은색에 70% 투명도 */ 
+    rgba(0, 0, 0, 0.5) 25%, /* 중간 색상: 검은색에 30% 투명도 */
+    rgba(0, 0, 0, 0.3) 50%, /* 중앙 색상: 완전 투명 */ 
+    rgba(0, 0, 0, 0.5) 75%, /* 중간 색상: 검은색에 30% 투명도 */ 
+    rgba(0, 0, 0, 0.8)      /* 끝 색상: 검은색에 70% 투명도 */
+  );
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.end-container {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.0),     /* 시작 색상: 검은색에 70% 투명도 */ 
+    rgba(0, 0, 0, 0.4) 25%, /* 중간 색상: 검은색에 30% 투명도 */
+    rgba(0, 0, 0, 0.8) 50%, /* 중앙 색상: 완전 투명 */ 
+    rgba(0, 0, 0, 0.4) 75%, /* 중간 색상: 검은색에 30% 투명도 */ 
+    rgba(0, 0, 0, 0.0)      /* 끝 색상: 검은색에 70% 투명도 */
+  );
+  width: 50%;
+  height: 100px;
+}
+
+.end-text {
+  position: absolute;
+  font-size: 200px;
+}
+
+.end-btn {
+  position: absolute;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 100px;
+  right: 5%;
+  bottom: 5%;
+}
+

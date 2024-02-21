@@ -1,0 +1,30 @@
+/* 방 상세정보 틀 */
+.wait-detail{
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+}
+/* 왼쪽 오른쪽 나누가 위한 css */
+.detail{
+    margin-top: 25px;
+    display: flex;
+    width: 20vw;
+    flex-direction: column;
+    text-align: center;
+}
+/* 방 정보의 대한 suject로 주제 */
+.subject{
+    margin-top: 30px;
+    color: #44A9F3;
+    font-size: x-large;
+}
+/* 방 정보의 내용 */
+.content{
+    color: white;
+}
+/* 이미지 */
+.play-img{
+    width: 200px;
+}
